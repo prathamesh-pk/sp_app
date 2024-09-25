@@ -1,0 +1,14 @@
+peline {
+    agnet any 
+    stages{
+        stage("docker build image"){
+            step{
+                scrip (dockerImage = docker.build("myapp:${007}",".")){
+
+                }
+                
+
+            }
+        }
+    }
+}
